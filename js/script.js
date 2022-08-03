@@ -9,7 +9,7 @@
 
 // 2
 // function capitalizeFirstLetter(string) {
-//     return string.slice(0, 1).toUpperCase() + string.slice(1).toLowerCase();
+//     return `${string.slice(0, 1).toUpperCase()}${string.slice(1)}`;
 // }
 
 // console.log(capitalizeFirstLetter("hello")); // Hello
@@ -20,7 +20,7 @@
 // function truncate(str, maxlength) {
 //     if (str.length > maxlength) {
 //        return str.slice(0, maxlength) + `...`
-//     } else return str;
+//     }
 // }
 
 // console.log(truncate("Hello world", 5)); // Hello...
@@ -68,14 +68,14 @@
 //   { make: 'Ford', model: 'Explorer', type: 'SUV', price: 31660 }
 // ];
 
-// let suvs = vehicles.filter(item => item.type === 'suv' || item.type === 'SUV');
+// let suvs = vehicles.filter(item => item.type.toUpperCase() === 'SUV');
 // let prices = suvs.map(item => item.price);
 // let average = prices.reduce((sum, current) => sum + current, 0) / prices.length;
 
 // console.log(average);
 
 // 6
-// let getKeysCount = obj => Object.values(obj).length;
+// let getKeysCount = obj => Object.keys(obj).length;
 
 // console.log(getKeysCount({ name: 'John' })); // 1
 // console.log(getKeysCount({ name: 'John', age: 22 })); // 2
@@ -86,7 +86,7 @@
 // let sorted = copySorted(arr);
 
 // function copySorted(arr){
-//     let newArray = arr.slice(arr);
+//     let newArray = arr.slice();
 //     return newArray.sort((a, b) => a -b );
 // }
 
