@@ -17,14 +17,14 @@
 // console.log(capitalizeFirstLetter("hElLo")); // HElLo
 
 // 3
-// function truncate(str, maxlength) {
-//     if (str.length > maxlength) {
-//        return str.slice(0, maxlength) + `...`
-//     }
-// }
+function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+       return str.slice(0, maxlength) + `...`
+    } return str;
+}
 
-// console.log(truncate("Hello world", 5)); // Hello...
-// console.log(truncate("Hello world", 25)); // Hello world
+console.log(truncate("Hello world", 5)); // Hello...
+console.log(truncate("Hello world", 25)); // Hello world
 
 // 4
 // const students = [
